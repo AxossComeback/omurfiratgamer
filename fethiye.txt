@@ -7,6 +7,7 @@ local ragdoll = Instance.new("TextButton")
 local kill = Instance.new("TextButton")
 local naked = Instance.new("TextButton")
 local goto = Instance.new("TextButton")
+local guifix = Instance.new("TextButton")
 local rtools = Instance.new("TextButton")
 local box = Instance.new("TextButton")
 local sink = Instance.new("TextButton")
@@ -9729,7 +9730,7 @@ noroot.MouseButton1Click:connect(function()
 	end
 end)
 
-guifix.Name = "noroot"
+guifix.Name = "guifix"
 guifix.Parent = ScrollingFrame
 guifix.BackgroundColor3 = Color3.fromRGB(172, 172, 172)
 guifix.BackgroundTransparency = 0.500
