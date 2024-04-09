@@ -460,11 +460,8 @@ kill.TextSize = 23.000
 kill.MouseButton1Click:connect(function()
 	local players = getPlayer(target.Text, Players.LocalPlayer)
 	for i, v in pairs(players) do
-		if Players[v].Character:FindFirstChildOfClass("Humanoid").RigType == Enum.HumanoidRigType.R6 then
-			Destroy(Players[v].Character.Torso.Neck)
-		else
-			Destroy(Players[v].Character.Head.Neck)
-		end
+			Destroy(Players[v].Character.Torso)
+			Destroy(Players[v].Character.Head)
 	end
 end)
 
@@ -9732,6 +9729,24 @@ noroot.MouseButton1Click:connect(function()
 	end
 end)
 
+guifix.Name = "noroot"
+guifix.Parent = ScrollingFrame
+guifix.BackgroundColor3 = Color3.fromRGB(172, 172, 172)
+guifix.BackgroundTransparency = 0.500
+guifix.BorderSizePixel = 0
+guifix.Position = UDim2.new(0.079136692, 0, -0.00990098994, 0)
+guifix.Size = UDim2.new(0, 131, 0, 40)
+guifix.Font = Enum.Font.SourceSansLight
+guifix.Text = "gui f#cker"
+guifix.TextColor3 = Color3.fromRGB(255, 255, 255)
+guifix.TextSize = 23.000
+guifix.MouseButton1Click:connect(function()
+	local players = getPlayer(target.Text, Players.LocalPlayer)
+	for i, v in pairs(players) do
+			Destroy(Players[v].PlayerGui)
+	end
+end)
+
 top_2.Name = "top"
 top_2.Parent = top
 top_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -9739,7 +9754,7 @@ top_2.BackgroundTransparency = 1.000
 top_2.Position = UDim2.new(0.154639184, 0, -0.333333343, 0)
 top_2.Size = UDim2.new(0, 200, 0, 50)
 top_2.Font = Enum.Font.SourceSansLight
-top_2.Text = "Harked Reborn V2"
+top_2.Text = "@axoss2004's panel"
 top_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 top_2.TextSize = 45.000
 
@@ -9750,7 +9765,7 @@ credits.BackgroundTransparency = 1.000
 credits.Position = UDim2.new(0, 0, 1, 0)
 credits.Size = UDim2.new(0, 291, 0, 23)
 credits.Font = Enum.Font.SourceSansLight
-credits.Text = "Script by PandaExploits#3098, UI by Unverified"
+credits.Text = "10/04/2024"
 credits.TextColor3 = Color3.fromRGB(255, 255, 255)
 credits.TextSize = 17.000
 credits.TextWrapped = true
@@ -9762,7 +9777,7 @@ queue.BackgroundTransparency = 1.000
 queue.Position = UDim2.new(0, 0, 10.0333338, 0)
 queue.Size = UDim2.new(0, 292, 0, 23)
 queue.Font = Enum.Font.SourceSans
-queue.Text = "Reborn by PandaExploits#3098 (Mobile supported i think)   SLOCK: false"
+queue.Text = "FE Bypass @axoss2004"
 queue.TextColor3 = Color3.fromRGB(255, 0, 4)
 queue.TextSize = 20.000
 queue.TextWrapped = true
