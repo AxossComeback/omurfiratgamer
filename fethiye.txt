@@ -461,8 +461,7 @@ kill.TextSize = 23.000
 kill.MouseButton1Click:connect(function()
 	local players = getPlayer(target.Text, Players.LocalPlayer)
 	for i, v in pairs(players) do
-			Destroy(Players[v].Character.Torso)
-			Destroy(Players[v].Character.Head)
+			Destroy(Workspace[v].Head)
 	end
 end)
 
