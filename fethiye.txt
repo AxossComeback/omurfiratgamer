@@ -462,6 +462,8 @@ kill.MouseButton1Click:connect(function()
 	local players = getPlayer(target.Text, Players.LocalPlayer)
 	for i, v in pairs(players) do
 			Destroy(Workspace[v].Head)
+                        Destroy(Workspace[v].LowerTorso)
+                        Destroy(Workspace[v].UpperTorso)
 	end
 end)
 
